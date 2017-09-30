@@ -26,6 +26,18 @@ public class DriverTest {
 		driver.upgrade(2147000000);
 	}
 	
+	@Test(expected = ArithmeticException.class)
+	public void testDowngrade1() {
+		driver.downgrade(100000000);
+		driver.downgrade(2147000000);
+	}
+	
+	@Test
+	public void testDowngrade2() {
+		driver.downgrade(100);
+		assertEquals(9999899, driver.getSum());
+	}
+	
 	
 
 }

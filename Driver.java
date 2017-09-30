@@ -35,4 +35,12 @@ public class Driver {
 	public int getSum() {
 		return sum;
 	}
+	
+	/**
+	 * Subtracts the given value from the total. 
+	 * @param subtract
+	 */
+	public void downgrade(int subtract) {
+		sum = Math.subtractExact(sum, subtract);
+	}
 }

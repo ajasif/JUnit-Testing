@@ -29,11 +29,7 @@ public class Driver {
 	}
 	
 	public void upgrade(int add) {
-		long result = (long) sum + (long) add;
-		if (result > (long) Integer.MAX_VALUE) {
-			throw new ArithmeticException();
-		}
-		sum += add;
+		sum = Math.addExact(sum, add);
 	}
 	
 	public int getSum() {

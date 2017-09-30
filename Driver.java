@@ -35,4 +35,8 @@ public class Driver {
 	public int getSum() {
 		return sum;
 	}
+	
+	public String toString() {
+		return sum + "";
+	}
 }

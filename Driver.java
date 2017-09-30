@@ -35,6 +35,13 @@ public class Driver {
 	public int getSum() {
 		return sum;
 	}
+
+	
+	
+	
+	
+	
+	
 	
 	/**
 	 * Subtracts the given value from the total. 

@@ -36,12 +36,9 @@ public class Driver {
 		return sum;
 	}
 
-	
-	
-	
-	
-	
-	
+	public String toString() {
+		return sum + "";
+	}
 	
 	/**
 	 * Subtracts the given value from the total. 
